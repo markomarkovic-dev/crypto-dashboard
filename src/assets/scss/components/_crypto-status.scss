@@ -1,0 +1,99 @@
+$crypto-logo: 60px;
+
+.grid-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 25px;
+  grid-auto-flow: row;
+
+  @media (max-width: 981px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.crypto-status {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+}
+
+.crypto-logo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(-#{$crypto-logo} / 2);
+
+  img {
+    max-height: $crypto-logo;
+    height: 60px;
+  }
+}
+
+.cripto-market {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  @media (max-width: 1048px) and (min-width: 982px) {
+    flex-direction: column;
+
+    > div {
+      margin: 4px 0;
+    }
+  }
+}
+
+.cripto-currency {
+  display: flex;
+  align-items: center;
+  color: $color-lightgray;
+
+  img {
+    max-height: 15px;
+    margin: 0 8px;
+  }
+}
+
+.cripto-value-status {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-size: 14px;
+    margin-right: 5px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  &.positive {
+    color: $color-green;
+
+    &::before {
+      background-image: url("../icons/status-positive.svg");
+    }
+  }
+
+  &.negative {
+    color: $color-red;
+
+    &::before {
+      background-image: url("../icons/status-negative.svg");
+    }
+  }
+}
+
+.crypto-current-value {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.crypto-chart {
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LoupeIcon from '../assets/icons/loupe.svg';
 import XIcon from '../assets/icons/letter-x.svg';
+import CryptoStatus from '../components/CryptoStatus';
 
 export class Body extends Component {
     render() {
@@ -19,6 +20,7 @@ export class Body extends Component {
                         <span className="not-typed"><img src={LoupeIcon} alt="" /></span>
                     </div>
                 </div>
+                <CryptoStatus/>
             </div>
         )
     }
