@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import arrowUpIcon from '../assets/icons/profit-arrow-up.svg';
+import arrowDownIcon from '../assets/icons/profit-arrow-down.svg';
 
 export class MarketCap extends Component {
   render() {
     return (
-      <div class="grid-row-3">
+      <div className="grid-row-3">
         <div className="market-overview">
           <div className="market-header">
             <h3>Market Overview</h3>
@@ -25,7 +27,24 @@ export class MarketCap extends Component {
         </div>
         <div className="profit-container">
           <h3>Profit</h3>
-          
+          <div className="profit profit-income">
+              <div className="profit-icon">
+                <img src={arrowUpIcon} alt="" />
+              </div>
+              <div className="profit-details">
+                <div className="profit-count">187275</div>
+                <div className="profit-label">Income</div>
+              </div>
+          </div>
+          <div className="profit profit-expenses">
+          <div className="profit-icon">
+                <img src={arrowDownIcon} alt="" />
+              </div>
+              <div className="profit-details">
+                <div className="profit-count">187275</div>
+                <div className="profit-label">Income</div>
+              </div>
+          </div>
         </div>
         <div className="quick-transfer">
           <h3>Quick Transfer</h3>

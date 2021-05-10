@@ -51,3 +51,24 @@
     }
   }
 }
+
+.profit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .profit-icon {
+    padding: 10px 12px;
+    background: $radial-gradient;
+    border-radius: 8px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &-income {
+    margin-bottom: 25px;
+  }
+}

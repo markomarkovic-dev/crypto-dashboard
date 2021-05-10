@@ -27,7 +27,7 @@ export class CryptoStatus extends Component {
           </div>
           <div className="crypto-chart"></div>
         </div>
-        <div class="crypto-status litecoin-status">
+        <div className="crypto-status litecoin-status">
            <div className="crypto-logo">
               <img src={litecoinIcon} alt="" />
           </div>

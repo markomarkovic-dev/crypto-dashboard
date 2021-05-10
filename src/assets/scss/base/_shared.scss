@@ -18,13 +18,13 @@ div {
 }
 
 .select {
-  background-color: $color-secondary;
+  background-color: lighten($color-secondary, 2%);
   border-radius: 8px;
-  border: 1px solid lighten($color-secondary, 3%);
+  border: 1px solid lighten($color-secondary, 4%);
 
   select {
     font-size: 1rem;
-    background-color: $color-secondary;
+    background-color: lighten($color-secondary, 2%);
     border: 0;
     outline: 0;
     color: white;
