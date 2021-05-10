@@ -11,9 +11,7 @@ $crypto-logo: 60px;
     grid-template-columns: 1fr;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
-  }
+  margin-bottom: 25px;
 }
 
 .crypto-status {

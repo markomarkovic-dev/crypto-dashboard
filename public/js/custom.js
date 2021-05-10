@@ -1,11 +1,11 @@
-// window.onload = function() {
-//     toggleHeader();
-//   };
+window.onload = function() {
+    clearSearchField();
+  };
 
-// function toggleHeader() {
-//     var marketOverview = document.querySelector('.market-header');
+function clearSearchField() {
+    var clearSearch = document.querySelector('.typed');
 
-//     marketOverview.onclick = function() {
-//         marketOverview.classList.toggle('active');
-//     }
-// }
+    clearSearch.onclick = function() {
+        document.querySelector('.dash-search input').value='';
+    }
+}

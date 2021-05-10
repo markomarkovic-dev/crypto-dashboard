@@ -6,11 +6,6 @@
   border-right: 1px solid $color-secondary;
   padding: 15px;
   overflow-y: auto;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    width: 0;
-  }
 }
 
 .logo-container {

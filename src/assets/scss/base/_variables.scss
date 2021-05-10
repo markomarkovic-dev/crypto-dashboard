@@ -7,6 +7,7 @@ $color-bitcoin: #d8975f;
 $color-ethereum: #5bbbec;
 $color-litecoin: #eb66be;
 $color-date: #84768b;
+$color-transfer: #ba7ef5;
 $radial-gradient: radial-gradient(
   lighten($color-secondary, 10%),
   lighten($color-secondary, 1%)
@@ -16,4 +17,13 @@ $radial-gradient: radial-gradient(
   background-color: $color-secondary;
   border-radius: 8px;
   padding: 20px;
+}
+
+@mixin dollarCurr {
+  &::before {
+    content: "$";
+    font-size: 0.7rem;
+    vertical-align: top;
+    margin-right: 2px;
+  }
 }

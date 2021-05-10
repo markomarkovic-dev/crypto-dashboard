@@ -52,15 +52,23 @@
   }
 }
 
+.profit-container,
+.quick-transfer {
+  > h3 {
+    margin-bottom: 15px;
+  }
+}
+
 .profit {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 
   .profit-icon {
     padding: 10px 12px;
     background: $radial-gradient;
     border-radius: 8px;
+    margin-right: 20px;
 
     img {
       height: 30px;
@@ -68,7 +76,136 @@
     }
   }
 
+  .profit-details {
+    .profit-count {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      @include dollarCurr;
+    }
+
+    .profit-label {
+      font-size: 0.8rem;
+      color: $color-lightgray;
+    }
+  }
+
   &-income {
-    margin-bottom: 25px;
+    border-bottom: 2px solid lighten($color-secondary, 3%);
+
+    .profit-count {
+      &::before {
+        color: $color-green;
+      }
+    }
+  }
+
+  &-expenses {
+    .profit-count {
+      &::before {
+        color: $color-red;
+      }
+    }
+  }
+}
+
+.profiles {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  .profile,
+  .add-profile {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .profile {
+    padding: 10px;
+    background-color: lighten($color-secondary, 3%);
+    text-align: center;
+    border: 1px solid transparent;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      border: 1px solid $color-litecoin;
+    }
+
+    img {
+      max-height: 25px;
+    }
+  }
+
+  .add-profile {
+    border: 1px dashed $color-litecoin;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $color-litecoin;
+    }
+  }
+}
+
+.transfer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &-label {
+    font-size: 0.8rem;
+    color: $color-lightgray;
+    margin-right: 15px;
+  }
+
+  &-amount {
+    font-size: 1.2rem;
+    font-weight: 500;
+    @include dollarCurr;
+  }
+}
+
+.btn-transfer {
+  background-color: $color-transfer;
+  padding: 15px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: darken($color-transfer, 4%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../icons/paper-plane.svg");
+    background-size: 13px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
   }
 }
