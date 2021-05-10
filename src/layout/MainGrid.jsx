@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import Content from './Content';
 import Aside from './Aside';
 
-export class Layout extends Component {
+export class MainGrid extends Component {
     render() {
         return (
             <div className="dash-grid">
@@ -15,4 +15,4 @@ export class Layout extends Component {
     }
 }
 
-export default Layout
+export default MainGrid

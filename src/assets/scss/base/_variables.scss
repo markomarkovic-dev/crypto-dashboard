@@ -7,3 +7,9 @@ $color-bitcoin: #d8975f;
 $color-ethereum: #5bbbec;
 $color-litecoin: #eb66be;
 $color-date: #84768b;
+
+@mixin columnStyle {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  padding: 20px;
+}

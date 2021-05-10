@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import LoupeIcon from '../assets/icons/loupe.svg';
 import XIcon from '../assets/icons/letter-x.svg';
 import CryptoStatus from '../components/CryptoStatus';
+import MarketCap from '../components/MarketCap';
 
-export class Body extends Component {
+export class Content extends Component {
     render() {
         return (
             <div className="content">
@@ -21,9 +22,10 @@ export class Body extends Component {
                     </div>
                 </div>
                 <CryptoStatus/>
+                <MarketCap/>
             </div>
         )
     }
 }
 
-export default Body
+export default Content

@@ -16,3 +16,36 @@ input,
 div {
   font-family: "Roboto", sans-serif;
 }
+
+.select {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  border: 1px solid lighten($color-secondary, 3%);
+
+  select {
+    font-size: 1rem;
+    background-color: $color-secondary;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 7px 3px 7px 15px;
+    -webkit-appearance: none;
+
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url(../icons/arrow-down.svg);
+    width: 10px;
+    height: 7px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-align: center;
+    margin-right: 8px;
+  }
+}
