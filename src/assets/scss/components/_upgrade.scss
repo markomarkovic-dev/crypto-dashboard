@@ -1,0 +1,11 @@
+.upgrade {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    max-height: 110px;
+    display: inline-block;
+    margin: 20px 0;
+  }
+}

@@ -2,6 +2,11 @@
   position: relative;
   grid-column: span 2;
   grid-row: span 2;
+
+  @media (max-width: 856px) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .market-header {

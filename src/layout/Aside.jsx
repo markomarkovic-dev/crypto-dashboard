@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RecentTransactions from '../components/Aside/RecentTransactions';
 import ProfileNotifications from '../components/Aside/ProfileNotifications';
+import Upgrade from '../components/Aside/Upgrade';
 
 
 export class Aside extends Component {
@@ -9,6 +10,7 @@ export class Aside extends Component {
             <div className="aside">
                 <ProfileNotifications/>
                 <RecentTransactions/>
+                <Upgrade/>
             </div>
         )
     }

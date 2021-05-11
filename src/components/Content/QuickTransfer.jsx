@@ -22,7 +22,7 @@ export class QuickTransfer extends Component {
         <div className="transfer-label">Amount:</div>
         <div className="transfer-amount">126.5</div>
       </div>
-      <button className="btn-transfer">
+      <button className="btn btn-transfer">
           Transfer now!
       </button>
     </div>

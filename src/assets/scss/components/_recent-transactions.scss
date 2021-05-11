@@ -1,0 +1,86 @@
+.recent-transactions {
+  color: white;
+  border-bottom: 1px solid $color-secondary;
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.recent-transaction {
+  display: flex;
+  margin: 15px 0;
+
+  .coin-logo {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: $radial-gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    flex-shrink: 0;
+
+    img {
+      max-height: 30px;
+    }
+  }
+
+  .transaction-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px 0;
+
+    .transaction-amount,
+    .transaction-time {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .transaction-time {
+      > div {
+        font-size: 0.6rem;
+        opacity: 0.8;
+        color: $color-lightgray;
+      }
+    }
+
+    .coin-naime,
+    .coin-amount {
+      font-size: 0.9rem;
+    }
+
+    .coin-amount {
+      @include dollarCurr;
+    }
+  }
+
+  &.bitcoin {
+    .coin-amount {
+      &::before {
+        color: $color-bitcoin;
+      }
+    }
+  }
+
+  &.litecoin {
+    .coin-amount {
+      &::before {
+        color: $color-litecoin;
+      }
+    }
+  }
+
+  &.ethereum {
+    .coin-amount {
+      &::before {
+        color: $color-ethereum;
+      }
+    }
+  }
+}

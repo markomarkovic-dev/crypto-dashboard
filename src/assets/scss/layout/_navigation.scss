@@ -6,6 +6,16 @@
   border-right: 1px solid $color-secondary;
   padding: 15px;
   overflow-y: auto;
+  z-index: 10;
+
+  @media (max-width: 856px) {
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-secondary;
+    padding: 0px 15px;
+  }
 }
 
 .logo-container {
@@ -17,14 +27,33 @@
   }
 }
 
-.nav-top,
-.nav-bot {
-  width: 100%;
-}
-
 .nav-top {
   > * {
     margin-bottom: 20px;
+
+    @media (max-width: 856px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 856px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.nav-bot {
+  @media (max-width: 856px) {
+    display: flex;
+  }
+
+  .mobile-nav {
+    &:hover {
+      .nav-icon {
+        filter: unset;
+      }
+    }
   }
 }
 
@@ -34,6 +63,12 @@
   border-radius: 8px;
   transition: all 0.2s linear;
   line-height: 0;
+
+  &.mobile-nav {
+    @media (min-width: 857px) {
+      display: none;
+    }
+  }
 
   .nav-icon {
     height: 50px;

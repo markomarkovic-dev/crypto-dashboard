@@ -62,38 +62,3 @@
     @include dollarCurr;
   }
 }
-
-.btn-transfer {
-  background-color: $color-transfer;
-  padding: 15px;
-  border: 0;
-  border-radius: 8px;
-  color: white;
-  outline: none;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s linear;
-
-  &:hover {
-    background-color: darken($color-transfer, 4%);
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-
-  &::before {
-    content: "";
-    background-image: url("../icons/paper-plane.svg");
-    background-size: 13px;
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    margin-right: 5px;
-  }
-}

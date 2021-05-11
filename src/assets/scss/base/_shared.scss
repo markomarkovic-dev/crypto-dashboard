@@ -49,3 +49,49 @@ div {
     margin-right: 8px;
   }
 }
+
+.btn {
+  padding: 15px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &-transfer {
+    background-color: $color-transfer;
+
+    &:hover {
+      background-color: darken($color-transfer, 4%);
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../icons/paper-plane.svg");
+      background-size: 13px;
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-right: 5px;
+    }
+  }
+
+  &-upgrade {
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: darken($color-secondary, 4%);
+    }
+  }
+}
