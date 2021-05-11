@@ -12,6 +12,7 @@ $radial-gradient: radial-gradient(
   lighten($color-secondary, 10%),
   lighten($color-secondary, 1%)
 );
+$box-shadow: 0 -6px 9px 3px $color-primary;
 
 @mixin columnStyle {
   background-color: $color-secondary;
