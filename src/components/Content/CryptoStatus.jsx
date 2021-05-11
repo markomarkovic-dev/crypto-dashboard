@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import BitcoinIcon from '../assets/icons/bitcoin.svg';
-import litecoinIcon from '../assets/icons/litecoin.svg';
-import EthereumIcon from '../assets/icons/ethereum.svg';
-import ArrowsIcon from '../assets/icons/arrows.svg';
+import BitcoinIcon from '../../assets/icons/bitcoin.svg';
+import litecoinIcon from '../../assets/icons/litecoin.svg';
+import EthereumIcon from '../../assets/icons/ethereum.svg';
+import ArrowsIcon from '../../assets/icons/arrows.svg';
 
 export class CryptoStatus extends Component {
   render() {

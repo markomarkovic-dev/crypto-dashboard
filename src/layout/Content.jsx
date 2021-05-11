@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import LoupeIcon from '../assets/icons/loupe.svg';
 import XIcon from '../assets/icons/letter-x.svg';
-import CryptoStatus from '../components/CryptoStatus';
-import MarketCap from '../components/MarketCap';
+import Dashboard from '../components/Dashboard';
 
 export class Content extends Component {
     render() {
@@ -21,8 +20,7 @@ export class Content extends Component {
                         <span className="not-typed"><img src={LoupeIcon} alt="" /></span>
                     </div>
                 </div>
-                <CryptoStatus/>
-                <MarketCap/>
+                <Dashboard/>
             </div>
         )
     }

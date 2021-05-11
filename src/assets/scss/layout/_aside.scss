@@ -1,3 +1,44 @@
 .aside {
   border-left: 1px solid $color-secondary;
+  padding: 20px;
+}
+
+.notif-profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile,
+.notifications {
+  width: 50px;
+  height: 50px;
+  background-color: lighten($color-secondary, 3%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &.notification-active {
+    &::before {
+      content: "•";
+      color: $color-litecoin;
+      position: absolute;
+      top: 3px;
+      right: 7px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.profile {
+  img {
+    max-height: 30px;
+  }
+}
+
+.notifications {
+  img {
+    max-height: 20px;
+  }
 }

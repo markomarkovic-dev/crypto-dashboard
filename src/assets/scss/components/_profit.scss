@@ -1,0 +1,50 @@
+.profit {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  .profit-icon {
+    padding: 10px 12px;
+    background: $radial-gradient;
+    border-radius: 8px;
+    margin-right: 20px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .profit-details {
+    .profit-count {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      @include dollarCurr;
+    }
+
+    .profit-label {
+      font-size: 0.8rem;
+      color: $color-lightgray;
+    }
+  }
+
+  &-income {
+    border-bottom: 2px solid lighten($color-secondary, 3%);
+
+    .profit-count {
+      &::before {
+        color: $color-green;
+      }
+    }
+  }
+
+  &-expenses {
+    .profit-count {
+      &::before {
+        color: $color-red;
+      }
+    }
+  }
+}

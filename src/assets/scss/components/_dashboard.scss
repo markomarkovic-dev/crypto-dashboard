@@ -1,0 +1,12 @@
+.market-overview,
+.profit-container,
+.quick-transfer {
+  @include columnStyle;
+}
+
+.profit-container,
+.quick-transfer {
+  > h3 {
+    margin-bottom: 15px;
+  }
+}
