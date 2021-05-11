@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import LogoImg from '../assets/images/logo.svg';
-import HouseIcon from '../assets/icons/011-house.svg';
-import ImageIcon from '../assets/icons/005-image.svg';
-import SettingsIcon from '../assets/icons/025-settings.svg';
-import NewsIcon from '../assets/icons/013-news.svg';
-import StockIcon from '../assets/icons/016-stock exchange app.svg';
+import HouseIcon from '../assets/icons/house.svg';
+import ImageIcon from '../assets/icons/image.svg';
+import SettingsIcon from '../assets/icons/settings.svg';
+import NewsIcon from '../assets/icons/news.svg';
+import StockIcon from '../assets/icons/stock exchange app.svg';
 import ManIcon from '../assets/icons/man.svg';
 
 
